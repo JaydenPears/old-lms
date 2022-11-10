@@ -1,5 +1,4 @@
 from flask import Flask, Blueprint
-
 from blueprints.course.course import course
 
 app = Flask(__name__)
