@@ -10,6 +10,7 @@ course = Blueprint('course', __name__,
 def index():
     context = {
         'title': "Главная страница",
+        'num_of_courses': 6,
         'text': 123,
     }
     return render_template("course/course.html", **context)

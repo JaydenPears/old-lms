@@ -20,10 +20,14 @@ body, input, button {
     color: #bdc1c6;
 }
 
-a{
+a, li{
     display: inline-block;
-    margin: 0px 0px 0px;
-    font-size: 13px;
+    margin: 5px 2px 5px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+a{
+    font-size: 13px;
 }

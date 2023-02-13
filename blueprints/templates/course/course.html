@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>
-        {{ text }}
+        {% for iteration in range(num_of_courses) %}
+            <li>{{ text }}</li>
+        {% endfor %}
     </h1>
 </body>
 </html>
