@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Blueprint, render_template
 
 course = Blueprint('course', __name__,
@@ -14,3 +15,5 @@ def index():
         'text': 123,
     }
     return render_template("course/course.html", **context)
+=======
+>>>>>>> e747573be99e76b028f8d8ddf8a56355f7c50f85
