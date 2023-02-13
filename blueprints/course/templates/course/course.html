@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('course.static', filename='style.css') }}">
+{% endblock %}
+{% block content %}
+    <h1>
+        {% for iteration in range(num_of_courses) %}
+            <li>{{ text }}</li>
+        {% endfor %}
+    </h1>
+{% endblock %}
