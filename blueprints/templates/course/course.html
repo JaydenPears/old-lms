@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('course.static', filename='base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('course.static', filename='course/style.css') }}">
+</head>
+<body>
+    <h1>
+        {% for iteration in range(num_of_courses) %}
+            <li>{{ text }}</li>
+        {% endfor %}
+    </h1>
+</body>
+</html>
