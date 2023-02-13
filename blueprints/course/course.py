@@ -9,7 +9,7 @@ course = Blueprint('course', __name__,
 @course.route("/")
 def index():
     context = {
-        'title': "Главная страница",
+        'title': "Курсы",
         'num_of_courses': 6,
         'text': 123,
     }
