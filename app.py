@@ -1,9 +1,9 @@
 from flask import Flask, Blueprint
-from blueprints.course.course import course
+from blueprints.landing.landing import landing
 
 app = Flask(__name__)
 
-app.register_blueprint(course, url_prefix='/')
+app.register_blueprint(landing, url_prefix='/')
 
 def main():
     app.run(debug=True, host='0.0.0.0', port=80)
