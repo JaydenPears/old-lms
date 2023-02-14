@@ -7,9 +7,17 @@ landing = Blueprint('landing', __name__,
 
 
 @landing.route("/")
-def index():
+def main_page():
     context = {
         'title': "Learning Management System | Главная страница",
-        'num_of_courses': 6,
     }
     return render_template("landing/landing.html", **context)
+
+
+@landing.route("/catalog/")
+def catalog():
+    context = {
+        'title': "Learning Management System | Каталог курсов",
+        'num_of_courses': 0,
+    }
+    return render_template("catalog/catalog.html", **context)
