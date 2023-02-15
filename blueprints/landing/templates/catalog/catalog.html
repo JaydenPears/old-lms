@@ -4,5 +4,20 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('landing.static', filename='catalog.css') }}">
 {% endblock %}
 {% block content %}
-    
+<div class="container">
+    {% for iter in range(123) %}
+        <div class="card">
+        <div class="box">
+            <div class="content">
+                <img src="https://cdn-icons-png.flaticon.com/512/4659/4659936.png" alt="1">
+                <h3>Лицей Академии Яндекса</h3>
+                <p>👨‍🏫 Богданов Александр Александрович<br>🏢 Большая Филёвская, 15</p>
+                <p>💵 Посещение бесплатно<br>📅 Понедельник и Четверг в 18:00</p>
+                <p>🧒 С 8-го по 10-й классы включительно</p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
