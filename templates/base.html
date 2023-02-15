@@ -8,15 +8,26 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">LMS</a>
+        <a href="/" class="logo">
+            LMS
+        </a>
         <ul>
             <li><a href="/catalog">Каталог курсов</a></li>
-            <li><a href="">О нас</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">Войти в LMS</a></li>
+            <li><a href="/">О нас</a></li>
+            <li><a href="/">Контакты</a></li>
+            <li><a href="/">Войти в LMS</a></li>
         </ul>
     </header>
-    {% block content %}
-    {% endblock %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="col-1">
+            <h3>ОБРАТНАЯ СВЯЗЬ</h3>
+            <form>
+                <button type="submit">СВЯЖИТЕСЬ С НАМИ</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>

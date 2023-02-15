@@ -6,12 +6,15 @@
 }
 
 body{
-    min-height: 100vh;
     background: linear-gradient(#232526, #414345);
 }
 
+main{
+    min-height: 100vh;
+    display: block;
+}
+
 header{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,5 +48,53 @@ header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
-    
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+header ul li a:hover{
+    background: #fff;
+    color: #2b1055;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    height: 10em;
+    padding: 2em 3em;
+    background: #333;
+    color: #efefef;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer div{
+    text-align: center;
+}
+
+.col-1{
+    height: 7em;
+}
+
+.col-1 h2{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
 }
