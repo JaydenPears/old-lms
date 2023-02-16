@@ -7,22 +7,22 @@
 <div class="container">
     {% for elem in info_about_courses %}
         <div class="card">
-        <div class="box">
-            <div class="content">
-                <img src="{{ links[elem['type_of_activity']] }}" alt="1">
-                <h3>{{ elem['name'] }}</h3>
-                <div class="description">
-                    <p align="justify">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit. sed quia consequuntur magni dolores eos, qui ratione voluptatem.</p>
-                </div>
-                <div class="about-course">
-                    <p>👨‍🏫 {{ elem['teacher'] }}<br>🏢 {{ elem['address'] }}</p>
-                    <p>🧒 {{ elem['age_limit'] }}<br>📅 {{ elem['schedule'] }}</p>
-                    <p>💵 {{ elem['cost'] }}</p>
-                    <a href="">Подробнее</a>
-                    <a href="">Записаться</a>
+            <div class="box">
+                <div class="content">
+                    <img src="{{ links[elem['type_of_activity']] }}" alt="1">
+                    <h3>{{ elem['name'] }}</h3>
+                    <div class="description">
+                        <p align="justify">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit. sed quia consequuntur magni dolores eos, qui ratione voluptatem.</p>
+                    </div>
+                    <div class="about-course">
+                        <p>👨‍🏫 {{ elem['teacher'] }}<br>🏢 {{ elem['address'] }}</p>
+                        <p>🧒 {{ elem['age_limit'] }}<br>📅 {{ elem['schedule'] }}</p>
+                        <p>💵 {{ elem['cost'] }}</p>
+                        <a href="">Подробнее</a>
+                        <a href="">Записаться</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     {% endfor %}
 </div>
