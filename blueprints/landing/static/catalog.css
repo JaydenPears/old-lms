@@ -79,6 +79,7 @@ body .container .card .box .content .description {
 }
 
 body .container .card .box .content h3 {
+    word-break: break-word;
     position: absolute;
     top: 20px;
     left: 80px;
@@ -87,6 +88,7 @@ body .container .card .box .content h3 {
     z-index: 1;
     transition: 0.5s;
     margin-bottom: 15px;
+    max-width: 400px;
 }
 
 body .container .card .box .content p {
