@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(#232526, #414345);
+    background: linear-gradient(#BE93C5, #977bcc);
 }
 
 main{
@@ -15,16 +15,22 @@ main{
 }
 
 header{
+    position: sticky;
+    /* -webkit-mask: linear-gradient(black 7rem, transparent);
+    backdrop-filter: blur(8px); */
+    background: #BE93C5;
+    z-index: 10000;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3.5rem;
 }
 
 header .logo{
+    padding: 50px 100px;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
@@ -34,6 +40,7 @@ header .logo{
 }
 
 header ul{
+    padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,12 +57,12 @@ header ul li a{
     color: #fff;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 header ul li a:hover{
     background: #fff;
-    color: #2b1055;
+    color: #000;
 }
 
 footer{
@@ -63,7 +70,10 @@ footer{
     width: 100%;
     height: 10em;
     padding: 2em 3em;
-    background: #333;
+    background: #977bcc;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #FFF;
     color: #efefef;
     align-items: flex-start;
     justify-content: center;
@@ -84,9 +94,11 @@ footer div{
 }
 
 footer div h3{
-    font-weight: 300;
+    color: #fff;
+    font-weight: 500;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 form a{
@@ -101,8 +113,8 @@ form a{
 }
 
 form a:hover{
-    background: #fff;
-    border: 2px solid #efefef;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    background: #f1ecec;
     color: #000;
     border-radius: 30px;
     padding: 10px 30px;

@@ -10,7 +10,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    background: #232427;
 }
 
 body .container {
@@ -40,7 +39,7 @@ body .container .card .box {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #2a2b2f;
+    background: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -84,7 +83,7 @@ body .container .card .box .content h3 {
     top: 20px;
     left: 80px;
     font-size: 1.4rem;
-    color: #fff;
+    color: #000000;
     z-index: 1;
     transition: 0.5s;
     margin-bottom: 15px;
@@ -94,7 +93,7 @@ body .container .card .box .content h3 {
 body .container .card .box .content p {
     font-size: 1.1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     z-index: 1;
     transition: 0.5s;
 }
@@ -115,11 +114,11 @@ body .container .card .box .content a {
     transition: 0.5s;
 }
 body .container .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    background: #f1ecec;
     color: #000;
 }
 
 body .container .card .box .content a {
-    background: #333;
+    background: #8f8d8d;
 }
