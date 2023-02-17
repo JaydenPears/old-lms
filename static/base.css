@@ -89,7 +89,7 @@ footer div h3{
     letter-spacing: 1px;
 }
 
-form button{
+form a{
     background: transparent;
     border: 2px solid #fff;
     color: #fff;
@@ -97,4 +97,16 @@ form button{
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+form a:hover{
+    background: #fff;
+    border: 2px solid #efefef;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
 }
