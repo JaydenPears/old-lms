@@ -1,3 +1,49 @@
-.naming .logo{
+h1, h2, h3, p{
+    color: #fff;
+}
 
+.naming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.naming .logo{
+    max-width: 400px;
+    margin: 0px 30px 0px;
+}
+
+.naming .logo img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10rem;
+}
+
+.naming .brief-information{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 0px;
+}
+
+.naming .brief-information .short-description{
+    height: 7rem;
+    max-width: 40rem;
+}
+
+.activity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity .logo img{
+    width: 12rem;
+    height: 12rem;
+}
+
+.activity{
+    margin: 40px 20px 0px;
 }
