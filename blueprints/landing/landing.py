@@ -7,8 +7,12 @@ landing = Blueprint('landing', __name__,
                    static_url_path='landing-static')
 
 
-filename = 'test.csv'
-info_for_catalog = get_info_from_csv(filename)
+filename_courses = 'test.csv'
+filename_teachers = 'teachers.csv'
+filename_descriptions = 'courses-description.csv'
+list_of_courses = get_info_from_csv(filename_courses)
+list_of_teachers = get_info_from_csv(filename_teachers)
+list_of_descriptions = get_info_from_csv(filename_descriptions)
 links_for_img = {"1": "https://cdn-icons-png.flaticon.com/512/4645/4645241.png",
                  "2": "https://cdn-icons-png.flaticon.com/512/4645/4645269.png",
                  "3": "https://cdn-icons-png.flaticon.com/512/4645/4645250.png",
@@ -30,7 +34,22 @@ def main_page():
 def catalog():
     context = {
         'title': "Learning Management System | Каталог курсов",
-        'info_about_courses': info_for_catalog,
+        'info_about_courses': list_of_courses,
         'links': links_for_img,
     }
     return render_template("catalog/catalog.html", **context)
+
+
+@landing.route("/catalog/course/<id>")
+def info_about_course(id):
+    course = None
+    for elem in list_of_courses:
+        if elem['id_course'] == id:
+            course = elem.copy()
+            break
+    context = {
+        'title': f"{course['name']}",
+        'info_about_courses': list_of_courses,
+        'links': links_for_img,
+    }
+    return render_template("catalog/course-info.html", **context)
