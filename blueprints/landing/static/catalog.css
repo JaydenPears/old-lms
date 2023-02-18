@@ -22,6 +22,7 @@ body .container {
 }
 
 body .container .card {
+    backdrop-filter: blur(8px);
     position: relative;
     min-width: 550px;
     height: 450px;
@@ -39,7 +40,10 @@ body .container .card .box {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #fff;
+    background: linear-gradient(#e0eafc, #cfdef3);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -107,18 +111,15 @@ body .container .card .box .content a {
     background: black;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     margin-right: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-}
-body .container .card .box .content a:hover {
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
-    background: #f1ecec;
-    color: #000;
+    background: #a1a0a0;
 }
 
-body .container .card .box .content a {
-    background: #8f8d8d;
+body .container .card .box .content a:hover {
+    background: #ffffff;
+    color: #000;
+    transition: 0.5s;
 }
