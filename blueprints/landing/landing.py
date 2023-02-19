@@ -51,5 +51,6 @@ def info_about_course(id):
         'title': f"{course['name']}",
         'info_about_courses': list_of_courses,
         'links': links_for_img,
+        'days': ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
     }
     return render_template("catalog/course-info.html", **context)
