@@ -1,8 +1,9 @@
 h1, h2, h3, p{
-    color: #000000;
+    color: #ffffff;
 }
 
 .naming{
+    padding: 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,13 @@ h1, h2, h3, p{
     width: 12rem;
     height: 12rem;
     border-radius: 10rem;
+    border: 3px solid #C3073F;
+}
+
+.brief-information .name hr{
+    border: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, #C3073F 65%, #fff);
+    border-image-slice: 1;
 }
 
 .naming .brief-information{
@@ -37,13 +45,28 @@ h1, h2, h3, p{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin: 40px 70px 0px;
 }
 
 .activity .logo img{
-    width: 12rem;
-    height: 12rem;
+    width: 6rem;
+    height: 6rem;
 }
 
-.activity{
-    margin: 40px 20px 0px;
+.activity h1{
+    font-size: 1.5rem;
+}
+
+.description{
+    margin: 20px 70px 0px;
+    max-width: 110rem;
+}
+
+.description p{
+    text-indent: 30px
+}
+
+.intelligence{
+    margin: 20px 70px 0px;
+    
 }

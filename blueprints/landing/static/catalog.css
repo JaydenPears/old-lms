@@ -22,28 +22,12 @@ body .container {
 }
 
 body .container .card {
-    backdrop-filter: blur(8px);
     position: relative;
+    margin: 30px;
     min-width: 550px;
     height: 450px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin: 30px;
-    transition: 0.5s;
-}
-
-body .container .card .box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: linear-gradient(#e0eafc, #cfdef3);
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    background: #2d2d30;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -53,18 +37,20 @@ body .container .card .box {
 }
 
 
-body .container .card .box .content {
+body .container .card .content {
     padding: 20px;
     text-align: left;
+    max-width: 485px;
+    max-height: 400px;
 }
 
-body .container .card .box .content .about-course {
+body .container .card .content .about-course {
     position: absolute;
     bottom: 15px;
     left: 15px;
 }
 
-body .container .card .box .content img {
+body .container .card .content img {
     top: 10px;
     left: 10px;
     position: absolute;
@@ -72,7 +58,7 @@ body .container .card .box .content img {
     height: 50px;
 }
 
-body .container .card .box .content .description {
+body .container .card .description {
     position: absolute;
     top: 80px;
     word-break: break-word;
@@ -81,28 +67,28 @@ body .container .card .box .content .description {
     font-size: 5rem;
 }
 
-body .container .card .box .content h3 {
+body .container .card .content h3 {
     word-break: break-word;
     position: absolute;
     top: 20px;
     left: 80px;
     font-size: 1.4rem;
-    color: #000000;
+    color: #ffffff;
     z-index: 1;
     transition: 0.5s;
     margin-bottom: 15px;
     max-width: 400px;
 }
 
-body .container .card .box .content p {
+body .container .card .content p {
     font-size: 1.1rem;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     transition: 0.5s;
 }
 
-body .container .card .box .content a {
+body .container .card .content a {
     font-size: 1.2rem;
     font-weight: 500;
     position: relative;
@@ -115,11 +101,14 @@ body .container .card .box .content a {
     margin-top: 20px;
     margin-right: 10px;
     transition: 0.5s;
-    background: #a1a0a0;
+    background: #858484;
 }
 
-body .container .card .box .content a:hover {
+body .container .card .content .enter{
+    background: #C3073F;
+}
+
+body .container .card .content a:hover {
     background: #ffffff;
     color: #000;
-    transition: 0.5s;
 }
