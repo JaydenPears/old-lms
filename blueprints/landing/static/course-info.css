@@ -60,16 +60,11 @@ h1, h2, h3, p{
 
 .description{
     margin: 20px 70px 0px;
-    max-width: 110rem;
+    max-width: 80rem;
 }
 
 .description p{
     text-indent: 30px
-}
-
-.intelligence{
-    margin: 20px 70px 0px;
-    
 }
 
 .schedule{
@@ -102,4 +97,25 @@ h1, h2, h3, p{
     min-width: 60px;
     min-height: 60px;
     background: #C3073F;
+}
+
+.intelligence{
+    margin: 20px 70px 0px;
+}
+
+.type-of-study{
+    margin: 10px 70px 0px;
+}
+
+.intelligence h3, .type-of-study h3{
+    display: inline;
+}
+
+.intelligence .with-text-decoration,
+.type-of-study .with-text-decoration{
+    text-decoration: none;
+    background-image: linear-gradient(0.25turn, #C3073F 65%, #fff);
+    background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 2px;
 }
